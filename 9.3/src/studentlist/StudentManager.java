@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * 学生管理类
+ * 集合实现————学生管理类
  * 1.添加学生信息\n
  * 2.显示学生信息\n    显示所有学生信息
  * 3.删除学生信息\n   根据学生id删除学生信息

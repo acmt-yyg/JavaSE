@@ -1,7 +1,8 @@
+package studentarray;
+
 /**
- * 作业3
- *
- * @author YangYonggang on 2020/9/3
+ * @author YangYonggang on 2020/9/4 12:43 下午
+ * @Description:do
  */
 public class Student {
 

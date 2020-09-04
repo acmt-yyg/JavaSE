@@ -1,18 +1,11 @@
+package studentarray;
+
 import java.util.Scanner;
 
 /**
- * 作业3：设计一个：学生管理系统
- * 1.添加学生信息\n
- * 2.显示学生信息\n    显示所有学生信息
- * 3.删除学生信息\n   根据学生id删除学生信息
- * 4.修改学生信息\n   根据学生id修改学生信息
- * 5.查看学生信息\n   查看的条件自定义
- * 6.排序\n  （请选择排序方法:1.按学号排序\t2.按成绩排序）
- * 7.退出
- * 学生信息有 学生id  学生姓名stuName  学生成绩stuScore (使用数组存储数据)
- * 完成上述要求
- *
- * @author YangYonggang on 2020/9/3
+ * @author YangYonggang on 2020/9/4 12:44 下午
+ * @Description:
+ * 数组实现————学生管理类
  */
 public class StudentManager {
 
@@ -233,5 +226,4 @@ public class StudentManager {
 		 */
 		private static void sortByScore(Student[] stu) {
 		}
-
 }
