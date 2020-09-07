@@ -71,7 +71,7 @@ public class EmployeeManager {
 
 				for (Employee e : employees) {
 						if (e != null && e.getId() == id) {
-								System.out.println(e.getName() + "\t" + e.getGender() + "\t" + e.getAge() + "\t" + e.getDepartment() + "\t" + e.getPost() + "\t" + e.getSalary());
+								System.out.println("工号=" + e.getId() + ", 姓名=" + e.getName() + ", 性别=" + e.getGender() + ", 年龄=" + e.getAge() + "岁" + ", 部门=" + e.getDepartment() + ", 职位=" + e.getPost() + ", 薪水=" + e.getSalary() + "元");
 								return e;
 						}
 				}
@@ -79,18 +79,26 @@ public class EmployeeManager {
 		}
 
 		/**
-		 * 修改员工薪水的方法
+		 * 修改员工信息的方法
 		 *
 		 * @param id
 		 */
-		public void updateEmployee(int id, double salary) {
+		public void updateEmployee(int id, String name, String gender, int age, String department, String post, double salary) {
 
-				System.out.println("更改前信息");
+				System.out.println("========更改前信息========");
+				System.out.println();
 				Employee e = this.getEmployee(id);
 				if (e != null) {
+						e.setName(name);
+						e.setGender(gender);
+						e.setAge(age);
+						e.setDepartment(department);
+						e.setPost(post);
 						e.setSalary(salary);
-						System.out.println("更改后信息");
-						System.out.println(e.getName() + "\t" + e.getGender() + "\t" + e.getAge() + "\t" + e.getDepartment() + "\t" + e.getPost() + "\t" + e.getSalary());
+						System.out.println();
+						System.out.println("========更改后信息========");
+						System.out.println();
+						System.out.println("工号=" + e.getId() + ", 姓名=" + e.getName() + ", 性别=" + e.getGender() + ", 年龄=" + e.getAge() + "岁" + ", 部门=" + e.getDepartment() + ", 职位=" + e.getPost() + ", 薪水=" + e.getSalary() + "元");
 				}
 		}
 }

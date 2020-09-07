@@ -20,13 +20,21 @@ public class Company {
 				em.addEmployee(new Employee(2, "李四", "女", 32, "研发部", "技师", 9000));
 				em.addEmployee(new Employee(3, "王五", "男", 26, "产品部", "经理", 24000));
 				em.addEmployee(new Employee(4, "赵六", "女", 24, "后勤部", "普工", 4000));
-				System.out.println("--------显示所有员工信息-------");
+				System.out.println("--------------------------显示所有员工信息--------------------------");
+				System.out.println();
 				em.listEmployee();
-				System.out.println("---------下面是删除员工--------");
+				System.out.println();
+				System.out.println("------------------------------删除员工------------------------------");
+				System.out.println();
 				em.deleteEmployee(2);
-				System.out.println("-------下面是查看员工信息-------");
+				System.out.println();
+				System.out.println("----------------------------查看员工信息----------------------------");
+				System.out.println();
 				Employee e1 = em.getEmployee(3);
-				System.out.println("-------下面是更改员工薪水-------");
-				em.updateEmployee(3, 2000);
+				System.out.println();
+				System.out.println("----------------------------更改员工信息----------------------------");
+				System.out.println();
+				em.updateEmployee(4, "田七", "男", 45, "研发部", "经理", 30000);
+
 		}
 }

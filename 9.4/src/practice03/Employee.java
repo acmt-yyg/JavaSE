@@ -6,10 +6,10 @@ package practice03;
  */
 public class Employee {
 
-		private int id;         // 编号
+		private int id;            // 编号
 		private String name;       // 姓名
 		private String gender;     // 性别
-		private double age;        // 年龄
+		private int age;           // 年龄
 		private String department; // 部门
 		private String post;       // 职位
 		private double salary;     // 薪水
@@ -17,7 +17,7 @@ public class Employee {
 		public Employee() {
 		}
 
-		public Employee(int id, String name, String gender, double age, String department, String post, double salary) {
+		public Employee(int id, String name, String gender, int age, String department, String post, double salary) {
 				this.id = id;
 				this.name = name;
 				this.gender = gender;
@@ -55,7 +55,7 @@ public class Employee {
 				return age;
 		}
 
-		public void setAge(double age) {
+		public void setAge(int age) {
 				this.age = age;
 		}
 
@@ -85,14 +85,7 @@ public class Employee {
 
 		@Override
 		public String toString() {
-				return "Employee{" +
-				"id='" + id + '\'' +
-				", name='" + name + '\'' +
-				", gender='" + gender + '\'' +
-				", age=" + age +
-				", department='" + department + '\'' +
-				", post='" + post + '\'' +
-				", salary=" + salary +
-				'}';
+				return
+				"工号=" + id + ", 姓名=" + name + ", 性别=" + gender + ", 年龄=" + age + "岁" + ", 部门=" + department + ", 职位=" + post + ", 薪水=" + salary + "元";
 		}
 }
