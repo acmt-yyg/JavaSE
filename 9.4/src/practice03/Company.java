@@ -27,6 +27,6 @@ public class Company {
 				System.out.println("-------下面是查看员工信息-------");
 				Employee e1 = em.getEmployee(3);
 				System.out.println("-------下面是更改员工薪水-------");
-				em.updateEmployee(4, 2000);
+				em.updateEmployee(3, 2000);
 		}
 }
